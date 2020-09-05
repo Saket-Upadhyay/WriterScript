@@ -1,2 +1,2 @@
 # WriterScript
-Brain F*uck based Esoteric Programming Language
+Brain F\*ck based Esoteric Programming Language
