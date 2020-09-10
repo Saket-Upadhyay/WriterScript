@@ -12,3 +12,4 @@
 - [ ] Alpha Testing
 - [ ] Documentation
 - [ ] Deployment to PyPI
+- [ ] Take the whole repository to a beauty saloon.

@@ -1,7 +1,10 @@
-"""writerscript.generator module.
-BrainFuck To Writer Script Converter with custom Text.
+"""
+writerscript.generator module.
+BrainFuck To Writer Script Generator with custom Text.
 
 Copyright (c) 2020 Saket Upadhyay
+
+https://github.com/Saket-Upadhyay/WriterScript
 """
 bf2ws_dir = {
     '+': 5,
@@ -38,6 +41,7 @@ def GEN(BFsourceFile,TextSourceFile):
     while(len(srcString)<sum):
         srcString=sourcedat.split(' ')
         sourcedat=sourcedat[len(srcString):-1]
+
     print("Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided.")
 
     
@@ -52,6 +56,7 @@ def GEN(BFsourceFile,TextSourceFile):
                         dat+=srcString[i]+' '
             except IndexError:
                 print("Not Enough Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided.")
+                from os 
                 exit(-1)
 
             dat=dat[0:-1]
@@ -59,7 +64,5 @@ def GEN(BFsourceFile,TextSourceFile):
             sptr+=lim
     print("Done.")
 
-        
-
-
-
+if __name__ == "__main__":
+    pass

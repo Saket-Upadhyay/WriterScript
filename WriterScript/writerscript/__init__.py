@@ -1,9 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
-"""writerscript module.
+"""
+writerscript module.
 A Brain F*ck derivative based on number of words as opcode.
 
 Copyright (c) 2020 Saket Upadhyay
+
+https://github.com/Saket-Upadhyay/WriterScript
 """
 
 from __future__ import print_function

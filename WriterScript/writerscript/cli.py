@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""writerscript.cli module.
+"""
+writerscript.cli module
 
 Command Line Interface for WriterScript.
 
 Copyright (c) 2020 Saket Upadhyay | x64mayhem
+
+https://github.com/Saket-Upadhyay/WriterScript
 """
 
 from __future__ import print_function

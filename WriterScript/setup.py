@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""WriterScript setup script."""
+"""WriterScript setup."""
 
 from setuptools import setup
 
@@ -10,9 +10,9 @@ if __name__ == "__main__":
     setup(
         name="writerscript",
         version=__VERSION__,
-        description="A brainfuck derivative, uses number of words as opcode",
+        description="A word count based Esoteric Programming Language based on logic of BrainFuck",
         license="MIT",
-        keywords="esoteric programming language brainfuck",
+        keywords="esoteric programming language brainfuck x64mayhem writerscript",
         author="Saket Upadhyay",
         author_email="x64mayhem@gmail.com",
         url="https://github.com/Saket-Upadhyay/WriterScript",

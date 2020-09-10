@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
 WriterScript to BF Translator
 
 Copyright (c) 2020 Saket Upadhyay | x64mayhem
 
-
+https://github.com/Saket-Upadhyay/WriterScript
 """
 
 bf2ws_dir = {
@@ -46,7 +48,6 @@ def ws_2_bf(wscript):
         for c in wscript:
             out += ws2bf_dir[c]
     except KeyError as e:
-        # raise Exception('Not a valid script') from e
         print("Not a valid Writer Script.")
         exit(-1)
     return out
@@ -75,8 +76,9 @@ def getCodeSeq(tfile):
 
 if __name__ == "__main__":
 
-    # bf_code = '+++++++++++++++++++++++++[>++>+++>++++>+++++<<<<-]+++++++++++++++++++++++++>>+++++.>+++++.++.----------.++.+++++.>--------..........<<<<++++++++.-----------------------.'
+    bf_code2 = '+++++++++++++++++++++++++[>++>+++>++++>+++++<<<<-]+++++++++++++++++++++++++>>+++++.>+++++.++.----------.++.+++++.>--------..........<<<<++++++++.-----------------------.'
     bf_code='++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.'
+
     parser=ap.ArgumentParser(description='WriterScript Esoteric Language', epilog='~ with <3 by X64M')
     parser.add_argument('-s','--script',metavar='target_script',action='store',type=str,help='accepted inputs : .txt, .pen, .md')
     parser.add_argument('-t','--ture',action='store_true')
@@ -87,7 +89,6 @@ if __name__ == "__main__":
 
     if(targetfile != '') and (targetfile != None):
         if (targetfile in os.listdir()):
-            # bfcode=getCodeSeq(targetfile)
             opcodeseq=getOpcodeFromFile(targetfile)
             bfcode=ws_2_bf(opcodeseq)
             print(bfcode)
