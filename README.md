@@ -37,6 +37,58 @@ Execute Code (CLI):
 wscript -e -s file.pen
 ```
 
+Convert BrainFuck to WriterScript:
+```shell
+wscript -g -sbf sourcebrainfuckfile.txt -stxt templateTextFile.txt
+```
+
+How to Create WriterScript code from any text source
+---
+
+**Step 1 :** Copy the source to a text file
+
+**Step 2 :** Replace the following elements with null -
+```
+, -> null
+. -> null
+r'\n' ->null
+
+r'\[([a-z])*|([0-9])*\]' -> null
+```
+For Data from WikiPedia :
+Remove all [0-9] index by replacing `r'\[[0-9][0-9]\]'` with  ` `.
+and all [a-z] index by replacing `r'\[[a-z][a-z]\]'` with  ` `.
+
+**For Example** 
+```
+A programming language is a notation for writing programs, which are specifications of a computation or algorithm.[3] Some authors restrict the term "programming language" to those languages that can express all possible algorithms.[3][4] Traits often considered important for what constitutes a programming language include:
+
+Function and target
+  A computer programming language is a language used to write computer programs, which involves a computer performing some kind of computation[5] or algorithm and possibly control external devices such as printers, disk drives, robots,
+[6] and so on. For example, PostScript programs are frequently created by another program to control a computer printer or display.
+More generally, a programming language may describe computation on some, possibly abstract, machine. It is generally accepted that a complete specification for a programming language includes a description, possibly idealized, of a machine or processor for that language.
+[7] In most practical contexts, a programming language involves a computer;
+consequently, programming languages are usually defined and studied this way.
+[8] Programming languages differ from natural languages in that natural languages are only used for interaction between people, while programming languages also allow humans to communicate instructions to machines.
+```
+
+Becomes ->
+
+```
+A programming language is a notation for writing programs which are specifications of a computation or algorithm Some authors restrict the term "programming language" to those languages that can express all possible algorithms Traits often considered important for what constitutes a programming language include: Function and target A computer programming language is a language used to write computer programs which involves a computer performing some kind of computation or algorithm and possibly control external devices such as printers disk drives robots and so on For example PostScript programs are frequently created by another program to control a computer printer or display More generally a programming language may describe computation on some possibly abstract machine It is generally accepted that a complete specification for a programming language includes a description possibly idealized of a machine or processor for that language In most practical contexts a programming language involves a computer; consequently programming languages are usually defined and studied this way Programming languages differ from natural languages in that natural languages are only used for interaction between people while programming languages also allow humans to communicate instructions to machines
+```
+
+**Step 3 :** Save with `.txt` extention.
+
+**Step 4 :** Save your BrainFuck `oneliner` code as `.txt`
+
+
+**Step 5 :** Run `wscript -g -sbf brainfuckfile.txt -stxt textfile.txt`
+
+**Step 6 :** `out.pen` file will be created
+
+**Test :** To test the code run `wscript -e -s out.pen` 
+
 ---
 
 Work In Progress
