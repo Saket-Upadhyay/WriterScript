@@ -10,5 +10,9 @@
 
 
 Work In Progress
+<br>
+#### [Download Beta Deployment Package](https://github.com/Saket-Upadhyay/WriterScript/releases/download/v0.2.1-beta/writerscript-0.2.1.tar.gz)
 
-[TODO](./Todo.md)
+<br>
+
+###### [Check TODO](./Todo.md)
