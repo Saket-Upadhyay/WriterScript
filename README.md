@@ -1,6 +1,6 @@
 <h6 align="center">
 <br>
-<img style="margin-bottom:-14px" src="Docs/Images/WSL.png" />
+<img style="margin-bottom:-14px" src="https://raw.githubusercontent.com/Saket-Upadhyay/WriterScript/master/Docs/Images/WSL.png" />
 <br>
 </h6>
 
