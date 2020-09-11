@@ -1,9 +1,12 @@
 <h6 align="center">
 <br>
-<img style="margin-bottom:-14px" src="Docs/Images/WSL.png" />
+<img style="margin-bottom:-14px" src="https://raw.githubusercontent.com/Saket-Upadhyay/WriterScript/master/Docs/Images/WSL.png" />
 <br>
 </h6>
-
+<p align='center'>
+  <a href="https://pypi.org/project/writerscript/">CHECK ON PyPI</a>
+</p>
+  
 Syntax
 ------
 WordCount  | brainfuck | description                                   
@@ -19,7 +22,12 @@ WordCount  | brainfuck | description
 
 Installation
 ------------
-Beta :
+Stable-ish (From PyPI):
+```shell
+python3 -m pip install writerscript
+```
+
+Bleeding Edge (From Source) :
 ```shell
 git clone https://github.com/Saket-Upadhyay/WriterScript.git
 cd WriterScript/WriterScript/
