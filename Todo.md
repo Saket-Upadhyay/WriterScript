@@ -10,6 +10,7 @@
 - [x] Add Examples
 - [x] Upload to GitHub (Make Public)
 - [x] Alpha Testing
+- [ ] Add Input Capability
 - [ ] Documentation
 - [x] Deployment to PyPI
 - [ ] Take the whole repository to a beauty saloon.
