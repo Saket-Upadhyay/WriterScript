@@ -29,20 +29,33 @@ def GEN(BFsourceFile,TextSourceFile):
     with open(BFsourceFile,'r') as bfcf:
         bfc=bfcf.readlines()[0].strip('\n')
     lims=bf2wsop(bfc)
-    srcString=""
+
+    cycle=False
+    
+
     sum=0
     for i in lims:
         sum+=i
+    
 
     with open(TextSourceFile,'r') as src:
         sourcedat=list(src)[0].strip('\n')
 
-    
-    while(len(srcString)<sum):
-        srcString=sourcedat.split(' ')
-        sourcedat=sourcedat[len(srcString):-1]
+    srcString=sourcedat.split(' ')
 
-    print("Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided.")
+    if (len(srcString)<sum):
+        print("WARNING (>_>) - Not Enough Source Feed : "+str(sum)+" Words Needed, but, only "+str(len(srcString))+" Loaded.\nTrying to reuse the buffer by activating cycling mode, but this is experimental feature and sometimes cause long delay and will result in repeated text blocks in output. Try to Provide text source with enough words.\n")
+
+    while(len(srcString)<sum):
+        srcString+=srcString
+        cycle=True
+        
+
+    if cycle:
+        print("INFO (o_o) :Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided [Block Cycle Mode].\n")
+    else:
+        print("INFO (o_o) :Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided [Linear Mode].\n")
+
 
     
     with open('out.pen','w') as dest:
@@ -55,14 +68,13 @@ def GEN(BFsourceFile,TextSourceFile):
                 for i in range(sptr,dptr):
                         dat+=srcString[i]+' '
             except IndexError:
-                print("Not Enough Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided.")
-                from os 
+                print("Error (x_x) - Not Enough Source Feed : "+str(sum)+" Words Needed, "+str(len(srcString))+" Provided. Exiting.")
                 exit(-1)
 
             dat=dat[0:-1]
             dest.write(dat+','+'\n')
             sptr+=lim
-    print("Done.")
+    print("DONE (^_^).")
 
 if __name__ == "__main__":
     pass
