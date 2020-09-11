@@ -4,7 +4,7 @@
 <br>
 </h6>
 <p align='center'>
-  <a href="https://pypi.org/project/writerscript/">CHECK ON PyPI</a>
+  <a href="https://pypi.org/project/writerscript/">[CHECK ON PyPI]</a> <b>|</b> <a href="https://github.com/Saket-Upadhyay/WriterScript/releases/download/BETA/writerscript-0.3.3.tar.gz">[Download Beta Deployment Package v0.3.3]</a>
 </p>
   
 Syntax
@@ -106,8 +106,6 @@ Note
 
 Work In Progress
 <br>
-#### [Download Beta Deployment Package](https://github.com/Saket-Upadhyay/WriterScript/releases/download/v0.2.1-beta/writerscript-0.2.1.tar.gz)
-
 <br>
 
 ###### [Check TODO](./Todo.md)
