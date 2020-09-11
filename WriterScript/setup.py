@@ -4,15 +4,24 @@
 
 from setuptools import setup
 
-__VERSION__ = "0.3.0"
+try:
+    with open("README.md", "r") as fh:
+        long_description = fh.read()
+except Exception:
+    long_description="A word count based Esoteric Programming Language based on logic of BrainFuck"
+    pass
+
+__VERSION__ = "0.3.2"
 
 if __name__ == "__main__":
     setup(
         name="writerscript",
         version=__VERSION__,
         description="A word count based Esoteric Programming Language based on logic of BrainFuck",
+	long_description=long_description,
         license="MIT",
         keywords="esoteric programming language brainfuck x64mayhem writerscript",
+	long_description_content_type="text/markdown",
         author="Saket Upadhyay",
         author_email="x64mayhem@gmail.com",
         url="https://github.com/Saket-Upadhyay/WriterScript",

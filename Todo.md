@@ -9,7 +9,7 @@
 - [x] Beta Testing
 - [x] Add Examples
 - [x] Upload to GitHub (Make Public)
-- [ ] Alpha Testing
+- [x] Alpha Testing
 - [ ] Documentation
-- [ ] Deployment to PyPI
+- [x] Deployment to PyPI
 - [ ] Take the whole repository to a beauty saloon.

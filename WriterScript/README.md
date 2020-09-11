@@ -1,21 +1,21 @@
 <h6 align="center">
 <br>
-<img style="margin-bottom:-14px" src="Docs/Images/WSL.png" />
+<img style="margin-bottom:-14px" src="https://raw.githubusercontent.com/Saket-Upadhyay/WriterScript/master/Docs/Images/WSL.png" />
 <br>
 </h6>
 
 Syntax
 ------
 WordCount  | brainfuck | description                                   
-----------|-----------|-----------------------------------------------
-`5`      | **+**         | increment the byte at cell location pointer                
-`6`      | **-**        | decrement the byte at cell location pointer                 
-`7`    | **\[**         | if pointer is zero, jump to code after matching `8`    
-`8`     | **\]**         | if pointer is nonzero, jump to code after matching `7`
-`9`    | **>**         | increment the data cell location pointer                    
-`10`   | **<**         | decrement the data cell location pointer                      
-`11`  | **,**         | input of one byte into cell location pointer              
-`12` | **.**         | output the byte at cell location pointer                    
+-----------|-----------|-----------------------------------------------
+`5`        | **+**     | increment the byte at cell location pointer                
+`6`        | **-**     | decrement the byte at cell location pointer                 
+`7`        | **\[**    | if pointer is zero, jump to code after matching `8`    
+`8`        | **\]**    | if pointer is nonzero, jump to code after matching `7`
+`9`        | **>**     | increment the data cell location pointer                    
+`10`       | **<**     | decrement the data cell location pointer                      
+`11`       | **,**     | input of one byte into cell location pointer              
+`12`       | **.**     | output the byte at cell location pointer                    
 
 Installation
 ------------
@@ -56,8 +56,8 @@ r'\n' ->null
 r'\[([a-z])*|([0-9])*\]' -> null
 ```
 For Data from WikiPedia :
-Remove all [0-9] index by replacing `r'\[[0-9][0-9]\]'` with  ` `.
-and all [a-z] index by replacing `r'\[[a-z][a-z]\]'` with  ` `.
+Remove all [0-9] index by replacing `r'\[[0-9][0-9]\]'` with  `null`.
+and all [a-z] index by replacing `r'\[[a-z][a-z]\]'` with  `null`.
 
 **For Example** 
 ```
@@ -94,12 +94,4 @@ Note
 > I created this project to help myself learn `Theory of Computation and Compiler Design` (5th Semester Course), This project is just for fun and is not associated with any person, organization (academic or non-academic) whatsoever.
 > The project is under MIT license, so it can be used as a teaching resource, other projects, etc. with proper citation to this repository.
 
----
-
-Work In Progress
-<br>
-#### [Download Beta Deployment Package](https://github.com/Saket-Upadhyay/WriterScript/releases/download/v0.2.1-beta/writerscript-0.2.1.tar.gz)
-
-<br>
-
-###### [Check TODO](./Todo.md)
+Check [https://github.com/Saket-Upadhyay/WriterScript](https://github.com/Saket-Upadhyay/WriterScript) for details
