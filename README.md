@@ -91,8 +91,8 @@ A programming language is a notation for writing programs which are specificatio
 
 Note
 ---
-I created this project to help myself learn `Theory of Computation and Compiler Design` (5th Semester Course), This project is `just for fun` and is not associated with any person, organisation (academic or non-academic) whatsoever.
-Project is under MIT license, so it can be used as a teaching resource, other projects etc. with propper citation to this repository.
+> I created this project to help myself learn `Theory of Computation and Compiler Design` (5th Semester Course), This project is just for fun and is not associated with any person, organization (academic or non-academic) whatsoever.
+> The project is under MIT license, so it can be used as a teaching resource, other projects, etc. with proper citation to this repository.
 
 ---
 
