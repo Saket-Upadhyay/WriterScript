@@ -89,6 +89,11 @@ A programming language is a notation for writing programs which are specificatio
 
 **Test :** To test the code run `wscript -e -s out.pen` 
 
+Note
+---
+I created this project to help myself learn `Theory of Computation and Compiler Design` (5th Semester Course), This project is `just for fun` and is not associated with any person, organisation (academic or non-academic) whatsoever.
+Project is under MIT license, so it can be used as a teaching resource, other projects etc. with propper citation to this repository.
+
 ---
 
 Work In Progress
