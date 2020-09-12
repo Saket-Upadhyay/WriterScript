@@ -88,6 +88,9 @@ def main():
     except AttributeError:
         arg_parser.print_usage()
         exit(-1)
+    except KeyboardInterrupt:
+        print("\nError (x_x) : User Interrupt, Exiting.")
+        exit(-1)
 
 
 if __name__ == "__main__":

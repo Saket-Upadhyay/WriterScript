@@ -11,7 +11,7 @@ except Exception:
     long_description="A word count based Esoteric Programming Language based on logic of BrainFuck"
     pass
 
-__VERSION__ = "0.3.2"
+__VERSION__ = "0.4.0"
 
 if __name__ == "__main__":
     setup(

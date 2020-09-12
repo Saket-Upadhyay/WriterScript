@@ -10,7 +10,8 @@
 - [x] Add Examples
 - [x] Upload to GitHub (Make Public)
 - [x] Alpha Testing
-- [ ] Add Input Capability
-- [ ] Documentation
+- [x] Add Input Capability
+- [x] Overflow Rebound (0-255)
 - [x] Deployment to PyPI
+- [ ] Documentation
 - [ ] Take the whole repository to a beauty saloon.

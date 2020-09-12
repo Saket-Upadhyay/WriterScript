@@ -132,15 +132,35 @@ class Command:
             self.command.run(program)
 
         if self.command == t_INC:
-            program.data[program.location] += 1
+            if program.data[program.location] >= 255:
+                program.data[program.location]=0
+            else:
+                program.data[program.location] += 1
         if self.command == t_DEC:
-            program.data[program.location] -= 1
+            if program.data[program.location] <= 0:
+                program.data[program.location]=255
+            else:
+                program.data[program.location] -= 1
+            
         if self.command == t_SHL:
             program.location -= 1
         if self.command == t_SHR:
             program.location += 1
         if self.command == t_OUT:
             sys.stdout.write(chr(program.data[program.location]))
+        if self.command == t_IN:
+            try:
+                RIN=int(input("Input (0-255) >"))
+                if RIN<0 or RIN>255:
+                    print("\nError (x_x) : I/O Exception, Exiting.")
+                    exit(-1)
+                else:
+                    program.data[program.location]=RIN
+            except Exception:
+                print("\nError (x_x) : I/O Exception, Exiting.")
+                program.data = None
+                exit(-1)
+
 
     def __str__(self):
         return self.command
