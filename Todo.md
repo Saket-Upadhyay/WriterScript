@@ -13,5 +13,6 @@
 - [x] Add Input Capability
 - [x] Overflow Rebound (0-255)
 - [x] Deployment to PyPI
-- [ ] Documentation
+- [ ] Descriptive Documentation
 - [ ] Take the whole repository to a beauty saloon.
+- [x] Dockerise application
