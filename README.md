@@ -22,18 +22,28 @@ WordCount  | brainfuck | description
 
 Installation
 ------------
-Stable-ish (From PyPI):
+**Docker (recommended)**
+```shell
+docker pull x64mayhem/writerscript
+
+docker run -it -v .:/writerscript/ x64mayhem/writerscript
+```
+
+
+**Stable-ish (From PyPI):**
 ```shell
 python3 -m pip install writerscript
 ```
 
-Bleeding Edge (From Source) :
+**Bleeding Edge (From Source) :**
 ```shell
 git clone https://github.com/Saket-Upadhyay/WriterScript.git
 cd WriterScript/WriterScript/
 
 python3 setup.py install
 ```
+
+
 File Extention
 --------------
 WriterScript works with `.pen` or `.txt` formats (UTF-8)
