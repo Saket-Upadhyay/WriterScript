@@ -74,8 +74,8 @@ r'\n' ->null
 r'\[([a-z])*|([0-9])*\]' -> null
 ```
 For Data from WikiPedia :
-Remove all [0-9] index by replacing `r'\[[0-9][0-9]\]'` with  ` `.
-and all [a-z] index by replacing `r'\[[a-z][a-z]\]'` with  ` `.
+Remove all [0-9] index by replacing `r'\[[(0-9)]*\]'` with  ` `.
+and all [a-z] index by replacing `r'\[[a-z]*\]'` with  ` `.
 
 **For Example** 
 ```
