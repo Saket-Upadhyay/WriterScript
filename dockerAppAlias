@@ -1,1 +1,1 @@
-alias wscript_d="docker run --rm -v $(pwd):/tmp/ writerscript"
+alias wscript_d="docker run --rm -v \$(pwd):/tmp/ writerscript"
