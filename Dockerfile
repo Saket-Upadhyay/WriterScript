@@ -1,11 +1,19 @@
-FROM python:3.7-alpine
+FROM python:3-alpine
 
 WORKDIR /writerscript/source
 
 COPY . .
 
-WORKDIR /writerscript
+WORKDIR /writerscript/source/WriterScript
 
-RUN pip install --no-cache-dir writerscript
+RUN pip install --no-cache-dir --upgrade pip
 
-CMD ["/bin/sh"]
+RUN pip install --no-cache-dir setuptools
+
+RUN python setup.py install
+
+WORKDIR /tmp
+
+ENTRYPOINT ["wscript"]
+
+CMD ["--help"]
