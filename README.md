@@ -24,9 +24,25 @@ Installation
 ------------
 **Docker (recommended)**
 ```shell
-docker pull x64mayhem/writerscript
+chmod +x buildDockerImage.sh
+./buildDockerImage.sh
+. ./dockerAppAlias
+wscript_d
+```
+This will create an alias `wscript_d` which you can use to run wcsript in docker, it also mounts the current directory in docker.
 
-docker run -it -v .:/writerscript/ x64mayhem/writerscript
+```shell
+wscript_d -g -sbf brainfk.txt -stxt data.txt
+```
+
+will produce `out.pen` in your current directory which can be run by -
+```shell
+wscript_d -e -s out.pen
+```
+
+If you want to add this alias to your shell, cat the `dockerAppAlias` to your rc file -
+```shell
+cat dockerAppAlias >> ~/.bashrc
 ```
 
 
@@ -35,7 +51,7 @@ docker run -it -v .:/writerscript/ x64mayhem/writerscript
 python3 -m pip install writerscript
 ```
 
-**Bleeding Edge (From Source) :**
+**Install to Host (From Source) :**
 ```shell
 git clone https://github.com/Saket-Upadhyay/WriterScript.git
 cd WriterScript/WriterScript/
